@@ -35,7 +35,7 @@ class ProductController extends Controller
  
     function create(Request $request) {
         $product = Product::create($request->getParsedBody());
-
+    
         return redirect()->route('product-list')
             ->with('status', "Product {$product->code} was created.");
     }
