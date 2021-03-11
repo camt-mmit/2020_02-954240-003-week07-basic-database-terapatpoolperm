@@ -16,6 +16,12 @@
                 ]) }}">Delete</a>
     </nav> <br />
 
+    @if(session()->has('ststus'))
+        <div>
+            <span>{{ session()->get('status') }}</span>
+        </div>
+    @endif
+
     <div>
         <table border-collapse="collapse"; margin="auto";>
             <tbody>
