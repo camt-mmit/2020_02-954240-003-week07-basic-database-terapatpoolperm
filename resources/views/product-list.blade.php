@@ -6,6 +6,7 @@
     <main>
     @if(session()->has('ststus'))
     <div>{{ session()->get('status') }}</div>
+    @endif
         <div class="center">
             <form action="{{ route('product-list') }}" method="get" class="search centerized" style="width: 300px;">
                 <label>
