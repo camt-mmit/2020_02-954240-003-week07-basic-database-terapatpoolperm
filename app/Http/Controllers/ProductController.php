@@ -113,7 +113,7 @@ class ProductController extends Controller
             ->orWhere('name', 'LIKE', "%{$word}%");
         });
     }
- 
+
         return view('product-add-shop', [
             'title' => "{$this->title} {$product->code} : Add Shop",
             'term' => $term,
