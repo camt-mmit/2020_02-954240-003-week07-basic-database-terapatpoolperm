@@ -1,0 +1,77 @@
+html {
+    font-family: Helvetica;
+    line-height: 1.3em;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+}
+
+nav a {
+    padding: 16px;
+}
+
+nav a:hover {
+    background-color: lightgray;
+}
+
+nav a:link, nav a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+a {
+    color: blue;
+}
+
+tr td {
+    background-color: white;
+}
+
+.shop-details {
+    margin: auto;
+    border: 1px solid black;
+}
+
+th {
+    background-color: lightgreen;
+}
+
+.b {
+    font-weight: bold;
+}
+
+.c {
+    color: blue;
+    font-weight: bold;
+}
+
+.center form {
+    text-align: center;
+    margin: auto;
+    display: center;
+}
+
+li {
+    list-style: none;
+}
+
+.product-list {
+    margin: auto;
+}
+
+.pre {
+    font-family: monospace;
+}
