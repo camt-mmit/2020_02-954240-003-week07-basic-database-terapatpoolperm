@@ -4,19 +4,11 @@
 
 @section('content')
     <main>
-<<<<<<< HEAD
-        @if(session()->has('ststus'))
-            <div>
-                <span>{{ session()->get('status') }}</span>
-            </div>
-        @endif
-=======
     @if(session()->has('ststus'))
-            <div>
-                <span>{{ session()->get('status') }}</span>
-            </div>
+        <div>
+            <span>{{ session()->get('status') }}</span>
+        </div>
     @endif
->>>>>>> aa0fd4d436859232099fb121066d2f9ab3cef769
         <div class="center">
             <form action="{{ route('product-list') }}" method="get" class="search centerized" style="width: 300px;">
                 <label>
