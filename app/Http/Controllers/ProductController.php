@@ -32,7 +32,7 @@ class ProductController extends Controller
             'title' => "{$this->title} : Create",
         ]);
     }
-
+    
     function create(Request $request) {
         $product = Product::create($request->getParsedBody());
     
