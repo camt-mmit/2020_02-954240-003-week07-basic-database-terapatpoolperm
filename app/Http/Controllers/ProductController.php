@@ -38,8 +38,9 @@ class ProductController extends Controller
     
         return redirect()->route('product-list')
             ->with('status', "Product {$product->code} was created.");
+        ;
     }
-    
+
     function show($productCode) {
         $product = Product
             ::where('code', $productCode)
