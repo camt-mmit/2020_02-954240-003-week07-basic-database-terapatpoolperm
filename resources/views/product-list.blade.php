@@ -3,7 +3,7 @@
 @section('title', $title)
 
 @section('content')
-    <main>
+    
     @if(session()->has('ststus'))
         <div>
             <span>{{ session()->get('status') }}</span>
@@ -48,5 +48,5 @@
                 @endforeach
             </tbody>
         </table>
-    </main>
+    
 @endsection
