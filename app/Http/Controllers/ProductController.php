@@ -73,8 +73,9 @@ class ProductController extends Controller
         $product = Product::where('code', $productCode)->firstOrFail();
         $product->delete();
  
-        return redirect()->route('product-list');
- 
+        return redirect()->route('product-list')
+            ->with('status', "Product {$product->code} was deleted.");
+        ;
     }
 
     function showShop(Request $request, $productCode) {
